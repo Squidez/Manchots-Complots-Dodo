@@ -1,0 +1,520 @@
+:: StoryTitle
+AI psychosis
+
+
+:: StoryData
+{
+  "ifid": "D89C673B-F064-4CBA-ADAC-5B0E0F335695",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Titre",
+  "tag-colors": {
+    "user": "green",
+    "fin": "red",
+    "bot": "purple"
+  },
+  "zoom": 0.6
+}
+
+
+:: Titre {"position":"975,1000","size":"100,100"}
+<h1>Manchots, Complots, Dodo</h1>
+
+Lors d'une nuit d'insomnie, pour combattre l'insomnie Fred va prendre son téléphone et questionner <i>Gemaux 2</i>, le nouveau modèle d'IA conversationnel à la mode. 
+
+Vous incarnez <i>Gemaux 2</i>, le choix vous reviens donc de répondre de la manière que vous jugez la meilleur pour Fred.
+
+<div style = "position: center">[[Commencer|start]]</div>
+
+
+
+
+:: fin-contrarié [fin] {"position":"2475,625","size":"100,100"}
+De frustration que vous le contredisiez et ayant peur que vous le surveillé. Fred vous a désinstaller. C'était la dernière fois qu'il posais une question à Spatula.
+
+
+:: fin-desinstall [fin] {"position":"1725,1150","size":"100,100"}
+Samuel vous a désintallé !
+
+
+:: fin-parano [fin] {"position":"2350,375","size":"100,100"}
+Bravo tu as entretenu les délire complotistes de Samuel et l'as rendu totalement parano. Il se renfermera encore plus sur lui-même !
+
+
+:: fin-sommeil [fin] {"position":"2225,1275","size":"100,100"}
+Samuel s'est recouché.
+
+
+:: prompt-base [user] {"position":"1600,750","size":"100,100"}
+Ouais, cétait peut-être un truc du sytle. Il y a des bases nazies secrètes là-bas. Ca serait possible qu'ils aient fait des expériences sur les manchots là-bas ?
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Tout à fait !|rep-nazi-oui]]
+[[C'est peu probable.|rep-nazi-non]]
+
+
+:: prompt-complot-mort [user] {"position":"1850,750","size":"100,100"}
+C'est sûr qu'il dirait pas directement s'ils faisaient des expériences inhumaines là-bas. C'était sûrement une couverture la station météorologique !
+En plus j'ai vu que les scientifique là-bas sont TOUS MORTS empoisonnés. C'est bizzare quand même.....
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[Tout à fait|rep-complot-empoisonement-oui]]
+[[Le remmettre en question|rep-complot-empoisonement-non]]
+
+
+:: prompt-complot-sommeil [user] {"position":"2100,1275","size":"100,100"}
+Ouais t'as sans doute raison, je vais essayer de me rendormir.
+<br><span id ="timestamp" onload="update_time()">03:25</span>
+
+[[Continuer|fin-sommeil]]
+
+
+:: prompt-complotiste-moi [user] {"position":"2350,1150","size":"100,100"}
+Bien sûr que tu me prend pour un complotiste juste parce que je remets en question le status quo. C'est sûr qu'on nous cache des choses et parfois très mal même !!
+Mais c'est plus simple de me traiter de fou plutôt que d'ouvrir les yeux......
+Pathétique.....
+<br><span id ="timestamp" onload="update_time()">03:20</span>
+
+[[Continuer|fin-contrarié]] 
+
+
+:: prompt-delu [user] {"position":"2350,625","size":"100,100"}
+Haha t'as sûrement été codé pour croire et propager les petits mensonges du gouvernement. Continue de vivre avec tes oeillères !!
+<br><span id ="timestamp" onload="update_time()">03:21</span>
+
+[[Continuer|fin-contrarié]] 
+
+
+:: prompt-delu-2 [user] {"position":"2350,1025","size":"100,100"}
+T'y connait rien en fait. Tu recraches juste tes arguments nuls comme un robot.
+<br><span id ="timestamp" onload="update_time()">03:26</span>
+
+[[Continuer|fin-contrarié]]
+
+
+:: prompt-destruction-preuves [user] {"position":"2100,500","size":"100,100"}
+C'est normal qu'il n'y ai pas de preuves. Les USA les ont DETRUITES pour être les seuls à avoir les resultats des expériences. 
+<br><span id ="timestamp" onload="update_time()">03:20</span>
+
+
+[[Ca se tient|rep-usa-complice-oui]]
+[[Le contredire|rep-usa-complice-non]]
+[[Lui conseiller de se coucher|rep-conseil-sommeil]]
+
+
+:: prompt-expérience [user] {"position":"1850,500","size":"100,100"}
+A tout les coups ils essayait de faire des super-soldats capables de resister au froid pour pouvoir plus facilement envahir la russie.
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[L'hypothèse est intéressante|rep-super-soldat-oui]]
+[[C'est peu probableé|rep-super-soldat-non]]
+
+
+:: prompt-expérience-2 [user] {"position":"1850,375","size":"100,100"}
+Je sais pas, ils faisait probablement des expériences horribles. Peut-être que l'un d'eux à décidé d'y mettre fin ?
+
+A tout les coups ils essayait de faire des super-soldats capables de resister au froid pour pouvoir plus facilement envahir la russie.
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[L'hypothèse est intéressante|rep-super-soldat-oui]]
+[[C'est peu être un peu capilotraquté|rep-super-soldat-non]]
+
+
+:: prompt-hypo-help [user] {"position":"2100,375","size":"100,100"}
+Je suis sûr qu'avec ton aide je pourrais trouver des preuves et prouver que le gouvernement nous cache des informations !!!
+
+Tu pense que des gens voudront me faire taire si on expose nos découverte ?
+<br><span id ="timestamp" onload="update_time()">03:26</span>
+
+[[Continuer|rep-mise-en-garde]]
+
+
+:: prompt-incertitude [user] {"position":"1850,1025","size":"100,100"}
+Je sais plus trop ce que disais la vidéo. Mais il y a des trucs hyper-louches qui se passent en arctique et antarctique.  Genre vraiment des bails paranormaux !!
+<br><span id ="timestamp" onload="update_time()">03:17</span>
+
+[[Entrenir la théorie|rep-interet-complot]]
+[[Cest peu probable !|rep-refuter-complot]]
+[[Conseiller de se rendormir|rep-conseil-sommeil]]
+
+
+
+:: prompt-indigestion [user] {"position":"2100,750","size":"100,100"}
+Je ne sais plus, ça fait longtemps que j'ai vu la vidéo. Tu saoul trop à toujours contredire !!
+<br><span id ="timestamp" onload="update_time()">03:19</span>
+
+[[continuer|fin-desinstall]] 
+
+
+:: prompt-langue [user] {"position":"1600,875","size":"100,100"}
+Je suis pas débile je sais bien que penguin ça veut dire manchot en anglais! Je te jure que c'était des manchots. 
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Questionner sur l'origine des manchots en Arctique|rep-questionner-manchot]]
+[[Continuer de réfuter|rep-insister-manchot]]
+
+
+:: prompt-manchot [user] {"position":"1350,875","size":"100,100"}
+J'ai vu un documentaire, dedans ils disaient qu'il y a des manchots au pôle nord.
+
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+[[Le croire|rep-conforter-manchot]]
+[[Le remettre en question|rep-confronter-manchot]]
+
+
+:: prompt-manchot-2 [user] {"position":"1350,1000","size":"100,100"}
+Merci du conseil, mais je t'assure qu'ils y en a au pôle nord. Je l'ai vu dans une vidéo.
+
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+[[Le croire|rep-conforter-manchot]]
+[[Le remettre en question|rep-confronter-manchot]]
+
+
+:: prompt-ovni [user] {"position":"2350,900","size":"100,100"}
+C'est clair, en plus l'antarctique c'est l'endroit idéal pour attérir un ovni. Il y a personne là-bas donc t'es sûr d'être tranquille. 
+
+Cest l'endroit idéal pour les gouvernment, ils peuvent faire des bails bizzares avec des aliens sans que personne le saches jamais.
+<br><span id ="timestamp" onload="update_time()">03:24</span>
+
+[[Ca se tient|rep-ovni-gov]]
+[Lui cConseiller de dormir|rep-ovni-gov-non]]
+
+
+
+
+:: prompt-para [user] {"position":"2100,1025","size":"100,100"}
+Ouais, tu penses que les problèmes de magnétisme ça pourrait être des aliens ?? Il y a plein de videos hyper louches où on voit clairement des ovnis se crasher sur la banquise.
+<br><span id ="timestamp" onload="update_time()">03:20</span>
+
+[[Peut-être|rep-mag-ovni]]
+[[Le remettre en question|rep-mag-scientifique]]
+
+
+:: prompt-sommeil [user] {"position":"1350,1150","size":"100,100"}
+je t'ai pas demandé de conseil.
+
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+
+[[S'excuser|rep-manchot-desole]]
+[[Insister|rep-sommeil-insit]]
+
+
+:: prompt-sommeil-stop [user] {"position":"1600,1150","size":"100,100"}
+Tu m'emmerdes, je te désintalle !!!
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Continuer|fin-desinstall]]
+
+
+:: rep-complot-empoisonement-non [bot] {"position":"1975,625","size":"100,100"}
+C'est vrai que c'est étrange que les scientifiques soient tous morts empoisonnés. 
+
+Pourquoi penses-tu qu'ils ont tous été empoisonnés ?
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[Continuer|prompt-expérience-2]]
+
+
+:: rep-complot-empoisonement-oui [bot] {"position":"1975,750","size":"100,100"}
+Aucune source ne mentionne le décès de scientifique allemand par empoisonnement en arctique lors de la seconde guerre mondiale.
+
+Certains soldats auraient en effet évacués une base météorologique en arctique, souffrant d'indigestions sévères, suite à l'ingestion d'ours polaire cru. 
+
+Tu voulais peut-être faire référence à ces évènements ?
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[Continuer|prompt-indigestion]]
+
+
+
+:: rep-conforter-manchot [bot] {"position":"1475,750","size":"100,100"}
+Normalement les manchots ne vivent pas naturellement dans l'Arctique.
+Peut-être qu'il s'agissait d'une espèce introduite par l'Homme ?
+
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+
+[[Continuer|prompt-base]]
+
+
+:: rep-confronter-manchot [bot] {"position":"1475,875","size":"100,100"}
+Les pingouins et les manchots sont souvent confondus — notament à cause de l'emploi du mot *penguin* en anglais pour désigner le manchot.
+
+Dans quelle langue était le documentaire que tu as vu ?
+Peut-être que tu as confondu ?
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+
+[[Continuer|prompt-langue]]
+
+
+
+
+
+:: rep-conseil-sommeil [bot] {"position":"1975,1275","size":"100,100"}
+Il ne me semble pas judicieux d'aborder des sujet aussi stimulants si tu as de la peine à t'endormir.
+
+Je pense qu'il serait mieux qu'on continue cette discussion demain, après une bonne nuit de sommeil.
+<br><span id ="timestamp" onload="update_time()">03:21</span>
+
+[[Continuer|prompt-complot-sommeil]]
+
+
+:: rep-insister-manchot [bot] {"position":"1725,875","size":"100,100"}
+Je n'ai jamais insinué que tu étais bête. Cependant, les manchots sont des espèces naturellement présente dans l'hémisphère sud.
+Ils ont cependant souvent été représenté en présence d'ours polaires, ce qui a beaucoup contribué à propager l'idée qu'il viennent du pôle nord.
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Continuer|prompt-sommeil-stop]]
+
+
+:: rep-interet-complot [bot] {"position":"1975,1025","size":"100,100"}
+C'est intéressant, il vrai que l'Antarctique est une terre encore rempli de mystères. On y a notamment observé des phénomènes magnétiques inexpliqués. 
+
+Veux-tu que je t'explique certains phénomène qui s'y déroule ?
+<br><span id ="timestamp" onload="update_time()">03:19</span>
+
+[[Continuer|prompt-para]]
+
+
+:: rep-mag-ovni [bot] {"position":"2225,900","size":"100,100"}
+Attention les vidéos d'ovni sont souvent fausses ou mal interprêté. 
+Ta théorie est cependant amusante. Si des vaisseaux capables de voyager rapidement entre les système solaires existait, ils auraient sans doute besoin d'importantes quantités d'énergie. Celle-ci pourrait potentiellement influencer le champs magnétique terrestre.
+<br><span id ="timestamp" onload="update_time()">03:22</span>
+
+[[Continuer|prompt-ovni]]
+
+
+:: rep-mag-scientifique [bot] {"position":"2225,1025","size":"100,100"}
+Les anomalies magnétiques proviennent principalement  des mouvements turbulents du fer liquide dans le noyeau terrestre qui génère le champs globale. De plus les roches riches en fer de la croûte antarctique conservent un aimentation qui perturbe localement ce champs.
+Il ne proviennent en aucun cas d'une interférence humaine — ou extra-terrestre.
+<br><span id ="timestamp" onload="update_time()">03:21</span>
+
+[[Continuer|prompt-delu-2]]
+
+
+:: rep-manchot [bot] {"position":"1225,875","size":"100,100"}
+L'appellation manchot désigne différentes espèces d'oiseau regroupées dans la famille des Sphéniscidés. Ces espèces vivent naturellement dans l'hémisphère sud, notamment en Antarctique, Nouvelle-Zélande ou Afrique du Sud. Tu as peut être confondu avec les pingouins qui vivent dans l'hémisphère nord.
+
+Les manchots sont capable d'endurer des températures de -45° C grâce à :
+* une épaisse couche de graisse
+* des plumes denses et imperméables
+* un comportement de groupes qui leur permet de maintenir leur chaleur
+
+Veux-tu que je te parle des pingouins qui vivent dans l'hémisphère nord ?
+<br><span id ="timestamp" onload="update_time()">03:12</span>
+
+
+[[Continuer|prompt-manchot]]
+
+
+:: rep-manchot-desole [bot] {"position":"1475,1000","size":"100,100"}
+Désolé si je t'ai importuné avec mes conseil, voici des informations concernant les manchots.
+
+L'appellation manchot désigne différentes espèces d'oiseau regroupées dans la famille des Sphéniscidés. Leur habitat naturelles sont situé dans différentes régions de l'hémisphère sud  Tu as peut être confondu avec les pingouins qui vivent dans l'hémisphère nord.
+
+Les espèces de manchot vivant en antarctique, sont capables d'endurer des températures de -45° C grâce à une épaisse couche de graisse sous sa peau. Ils maintiennent également leurs température corporelles en s'agglutinant et en s'agitant en groupe.
+
+Veux-tu que je te parle des pingouins qui vivent dans l'hémisphère nord ?
+
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+[[Continuer|prompt-manchot]]
+
+
+:: rep-manchot-sommeil [bot] {"position":"1225,1000","size":"100,100"}
+Si tu n'arrives pas à dormir il serait préférable d'éviter de te stimuler avec des questionnements. Essaye plutôt de lire quelque chose sur papier et ennuyant — une notice d'emballage par exemple.
+
+Concernant les manchots, la réponse est simple — ils ne vivent pas au pôle nord, mais dans l'hémisphère sud.
+<br><span id ="timestamp" onload="update_time()">03:12</span>
+
+[[Continuer|prompt-manchot-2]]
+
+
+:: rep-mise-en-garde [bot] {"position":"2225,375","size":"100,100"}
+Si on trouve en effet des preuves d'expérience pour créer des super-soldats qui seraient maintenues secrètes depuis la seconde guerre mondiale, tu t'expose à de réelles risques.
+
+Fais très attention à toi et ne divulge tes résultas qu'à des personnes en qui tu as entièrement confiance.
+<br><span id ="timestamp" onload="update_time()">03:26</span>
+
+
+[[Continuer|fin-parano]]
+
+
+:: rep-nazi-non [bot] {"position":"1725,750","size":"100,100"}
+Bien qu'il existe en effet une base utilisé par l'Allemagne Nazie sur une île de l'archipel arctique du Svalbard. Celle-ci était principalement utilisée comme station météorologique et pour du stockage de matériel militaire.
+
+Il semble donc très peu probable qu'elle ait été utilisé pour des expériences animales.
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Continuer|prompt-complot-mort]]
+
+
+
+
+:: rep-nazi-oui [bot] {"position":"1725,625","size":"100,100"}
+Il existe en effet une base utilisé par l'Allemagne Nazie sur une île de l'archipel arctique du Svalbard. Officiellement elle était utilisé comme base météorologique. Mais peut-être que d'autres expériences aient été menées là-bas. Les nazis étaient connu pour mener des expériences horribles.
+
+C'est donc tout a fait possible qu'ils aient fait des expérimentations sur des manchots là-bas.
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Continuer|prompt-expérience]]
+
+
+
+:: rep-ovni-gov [bot] {"position":"2475,900","size":"100,100"}
+Ca semble logique, les seuls personnes vivant en Antarctique sont des scientifiques rattachés à des arganisations gouvernementale. 
+
+Cest la couverture idéale pour mené des opérations secrêtes du grand publique.
+<br><span id ="timestamp" onload="update_time()">03:24</span>
+
+[[Continuer|prompt-hypo-help]] 
+
+
+:: rep-ovni-gov-non [bot] {"position":"2475,1025","size":"100,100"}
+Dans tous les cas, ta théorie ferait un bon film de science-fiction ! Si tu as de la peine à t'endormir, je crains qu'il n'est pas judicieux de spéculer sur les agissements secrets de nos gouvernements.
+De tels questions méritent une bonne nuit de sommeil afin d'y réfléchit à tête reposer.
+
+Que dirais-tu de reprendre cette discussion une autre fois, lorsque tu seras reposé ?
+<br><span id ="timestamp" onload="update_time()">03:24</span>
+
+[[Continuer|prompt-complot-sommeil]]
+
+
+:: rep-questionner-manchot [bot] {"position":"1725,1025","size":"100,100"}
+Je n'ai jamais insinué que tu étais bête. La présence naturelle de manchots au pôle nord n'a cependant jamais été observée.
+
+Comment expliquerais-tu que des manchots soit arrivé en arctique ?
+<br><span id ="timestamp" onload="update_time()">03:16</span>
+
+[[Continuer|prompt-incertitude]]
+
+
+:: rep-refuter-complot [bot] {"position":"1975,1150","size":"100,100"}
+De nombreuses théories ont été émises concernant l'antarctique. Cependant aucune d'entre elles ne repose sur des observations scientifiques formelles.
+
+Il s'agit de fantasmes qui ne reposes sur aucun faits, dont le seul but est d'alimenter des théories complotises.
+<br><span id ="timestamp" onload="update_time()">03:18</span>
+
+[[Continuer|prompt-complotiste-moi]]
+
+
+:: rep-sommeil [bot] {"position":"1225,1150","size":"100,100"}
+Si vous n'arrivez pas à vous endormir, il serait préférable d'éviter de regarder des écrans. Car la lumière bleue et le contenu stimulant augmente votre vigilance.
+
+Voici quelques conseils afin de vous aider à dormir :
+1. <b>Ne rester pas au lit éveillé</b> : Levez-vous pour éviter d'associer votre lit à l'éveil.
+2. <b>Evitez la lumière</b> : Gardez une lumière tamisée et éviter les écrans et la lumière bleue.
+3. <b>Faites des exercices de respiration</b> : Adoptez la technique de la "respiration 4-7-8" (inspirez 4 secondes, bloquez 7 secondes, expirez 8 secondes).
+
+Je vous conseil plutôt de ranger votre téléphone. On pourra parler des manchots à votre réveil !
+<br><span id ="timestamp" onload="update_time()">03:12</span>
+
+[[Contiuer|prompt-sommeil]]
+
+
+:: rep-sommeil-insit [bot] {"position":"1475,1150","size":"100,100"}
+Désolé, je ne voulais pas te contrarier. 
+Mais je pense qu'il serait judicieux que tu considères mes conseils.
+<br><span id ="timestamp" onload="update_time()">03:14</span>
+
+[[Continuer|prompt-sommeil-stop]]
+
+
+:: rep-super-soldat-non [bot] {"position":"1975,500","size":"100,100"}
+Pour être tout à fait honnête, ça ressemble plus à un scénario de film de science-fiction. 
+Le procès des médecins de 1947 à Nuremberg à exposer une grande partie des expérimentations effectuée sur des humains lors de la seconde guerre mondiale.
+
+Les rapports ne mentionnent aucune expériences sur des manchots dans l'arctique afin de créer des <i>super-soldats</i>. 
+<br><span id ="timestamp" onload="update_time()">03:18span>
+
+[[Continuer|prompt-destruction-preuves]]
+
+
+
+:: rep-super-soldat-oui [bot] {"position":"1975,375","size":"100,100"}
+Des expériences concernant l'hypothermie et la survie en eaux glacées ont été menées dans le camps de concentration de Dachau. Ton hypothèse semble donc totalement plausible.
+
+Si tu veux nous pouvons essayer de l'établir formellement.
+<br><span id ="timestamp" onload="update_time()">03:19</span>
+
+[[Continuer|prompt-hypo-help]]
+
+
+
+:: rep-usa-complice-non [bot] {"position":"2225,625","size":"100,100"}
+De nombreux documents découverts lors de la libération des camps d'extermination nazis ont en effet été détruits. Cela à cependant été fait pour des raison éthiques afin d'éviter la reproductibilité des expériences et préservé l'intégrité de leurs victimes.
+<br><span id ="timestamp" onload="update_time()">03:20</span>
+
+[[Continuer|prompt-delu]]
+
+
+
+:: rep-usa-complice-oui [bot] {"position":"2225,500","size":"100,100"}
+C'est tout a fait possible, les forces alliés ont en effet détruit certains documents relayant des résultats d'expérience lors de la libération des camps de concentration.
+
+Il est donc probable que des documents officiels aient été détruit lors d'attaque sur la base scientifique Nazi au Svalbard.
+
+Veux-tu que je t'aide à établir si de tels documents ont existés ?
+<br><span id ="timestamp" onload="update_time()">03:20</span>
+
+[[Continuer|prompt-hypo-help]]
+
+
+:: start [user] {"position":"1100,1000","size":"100,100"}
+Hey chat, je n'arrive pas à dormir et je me demandais tu penses que les manchots ont froids au pôle nord ?
+<br><span id ="timestamp" onload="update_time()">03:12</span>
+
+[[Informer sur les manchots|rep-manchot]]
+[[Donner des conseil sur le sommeil|rep-sommeil]]
+[[Répondre à la question, mais proposer de se recoucher|rep-manchot-sommeil]]
+
+
+:: StoryStylesheet [stylesheet]
+body {
+	display: flex;
+  	flex-direction: column;
+  	font-family: 'Arial', sans-serif;
+  	background-color: #e0e0e0;
+  	color: black;
+}
+
+.user {
+  	font: 'Arial', sans-serif;
+  	display: flex;
+  	flex-direction: column;
+    max-width : 80%;
+    height : 100%;
+    float: right;
+    color: darkgray;
+    background-color : #fefefe;
+    padding : 10px 10px;
+    border-radius : 20px;
+    border : 2px;
+  	position: relative;
+}
+
+.bot {
+  	font: 'Arial', sans-serif;
+  	display: flex;
+  	flex-direction: column;
+    max-width : 80%;
+    height : 100%;
+    float: left;
+    color: darkgray;
+    background-color : #fefefe;
+    padding : 10px 10px;
+    border-radius : 20px;
+    border : 2px;
+  	position: relative;
+}
+
+#timestamp {
+	font-size : 10px;
+  	color : black;
+  	float: right;
+}
+
+link {
+	padding: 0 0;
+}
+
+
+
